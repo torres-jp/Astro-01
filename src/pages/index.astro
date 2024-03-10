@@ -5,13 +5,14 @@ import SocialPills from "../components/SocialPills.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
 import Github from "../components/icons/Github.astro";
 import MailIcon from "../components/icons/Mail.astro";
+import BriefCase from "../components/icons/BriefCase.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 ---
 
 <Layout title="Porfolio Practices.">
   <main>
-    <SectionContainer>
+    <SectionContainer class="py-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
@@ -59,7 +60,11 @@ import SectionContainer from "../components/SectionContainer.astro";
       </nav>
     </SectionContainer>
 
-    <SectionContainer>
+    <SectionContainer id="projects">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <BriefCase class="size-7" />
+        Work Experience
+      </h2>
       <Experience />
     </SectionContainer>
   </main>
