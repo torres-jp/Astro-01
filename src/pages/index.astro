@@ -4,13 +4,16 @@ import Badge from "../components/Badge.astro";
 import SocialPills from "../components/SocialPills.astro";
 import LinkedIn from "../components/icons/LinkedIn.astro";
 import Github from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Porfolio Practices.">
   <main>
-    <section class="w-full lg:w-[740px] mx-auto py-44">
+    <SectionContainer>
       <img
-        class="rounded-full w-12 h-12 mb-4"
+        class="rounded-full size-12 mb-4"
         src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
         alt="porfolio photo"
       />
@@ -38,22 +41,31 @@ import Github from "../components/icons/Github.astro";
         >
       </h2>
 
-      <nav class="flex gap-x-2 mt-8">
+      <nav class="flex gap-x-4 mt-8">
         <SocialPills href="*">
-          <LinkedIn class="h-6 w-6" />
+          <LinkedIn class="size-6" />
           LinkedIn
         </SocialPills>
 
         <SocialPills href="*">
-          <Github class="h-6 w-6" />
+          <Github class="size-6" />
           Github
         </SocialPills>
+
+        <SocialPills href="*">
+          <MailIcon class="size-6" />
+          email@example.com
+        </SocialPills>
       </nav>
-    </section>
+    </SectionContainer>
+
+    <SectionContainer>
+      <Experience />
+    </SectionContainer>
   </main>
 </Layout>
 
 <style></style>
 
 <!-- 
-15:23 -->
+53:00 -->
