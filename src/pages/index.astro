@@ -11,14 +11,16 @@ import SectionContainer from "../components/SectionContainer.astro";
 ---
 
 <Layout title="Porfolio Practices.">
-  <main>
+  <main class="px-4">
     <SectionContainer class="py-44 pb-24">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
         alt="porfolio photo"
       />
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-4"
+      >
         Lorem ipsum dolor<a
           href="*"
           target="_blank"
@@ -29,7 +31,7 @@ import SectionContainer from "../components/SectionContainer.astro";
         </a>
       </h1>
 
-      <h2 class="text-2xl text-wrap opacity-80">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         <span class="opacity-80">Lorem ipsum dolor sit,</span> amet consectetur adipisicing
         elit. <span class="text-yellow-200/90"
           >Quae nam quam earum odio harum omnis aliquam laborum at ipsum?</span
@@ -42,19 +44,19 @@ import SectionContainer from "../components/SectionContainer.astro";
         >
       </h2>
 
-      <nav class="flex gap-x-4 mt-8">
+      <nav class="flex gap-4 mt-8 flex-wrap">
         <SocialPills href="*">
           <LinkedIn class="size-6" />
           LinkedIn
         </SocialPills>
 
         <SocialPills href="*">
-          <Github class="size-6" />
+          <Github class="size-4 md:size-6" />
           Github
         </SocialPills>
 
         <SocialPills href="*">
-          <MailIcon class="size-6" />
+          <MailIcon class="size-4 md:size-6" />
           email@example.com
         </SocialPills>
       </nav>
@@ -62,7 +64,7 @@ import SectionContainer from "../components/SectionContainer.astro";
 
     <SectionContainer id="projects">
       <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
-        <BriefCase class="size-7" />
+        <BriefCase class="size-4 md:size-7" />
         Work Experience
       </h2>
       <Experience />
@@ -73,4 +75,4 @@ import SectionContainer from "../components/SectionContainer.astro";
 <style></style>
 
 <!-- 
-53:00 -->
+01:15:00 -->
