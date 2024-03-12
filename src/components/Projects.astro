@@ -1,0 +1,50 @@
+---
+import ReactIcon from "../components/icons/ReactIcon.astro";
+import TailwindIcon from "../components/icons/TailwindIcon.astro";
+
+const TAGS = {
+  REACT: {
+    name: "React",
+    class: "bg-black text-white",
+    icon: ReactIcon,
+  },
+  TAILWIND: {
+    name: "TailwindCSS",
+    class: "bg-white text-[#73bcf6]",
+    icon: TailwindIcon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "SVGL web",
+    description: "orem ipsum dolor sit, amet consectetur adipisicing elit.",
+    link: "https://svgl.vercel.app/?search=g",
+    github: "https://github.com/pheralb/svgl",
+    image: "/projects/svgl.webp",
+    tags: [TAGS.REACT, TAGS.TAILWIND],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, tags, image }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul>
+        {tags.map((tag) => (
+          <li>
+            <tag.icon class="size-4" />
+            {tag.name}
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/10"
+        src={image}
+        alt={`Captura de pantalla  del proyecto ${image}`}
+      />
+    </article>
+  ))
+}

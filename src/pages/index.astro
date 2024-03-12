@@ -6,13 +6,15 @@ import LinkedIn from "../components/icons/LinkedIn.astro";
 import Github from "../components/icons/Github.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import BriefCase from "../components/icons/BriefCase.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout title="Porfolio Practices.">
   <main class="px-4">
-    <SectionContainer class="py-44 pb-24">
+    <SectionContainer class="py-44 pb-32">
       <img
         class="rounded-full size-12 mb-4"
         src="https://media.istockphoto.com/id/1300845620/vector/user-icon-flat-isolated-on-white-background-user-symbol-vector-illustration.jpg?s=612x612&w=0&k=20&c=yBeyba0hUkh14_jgv1OKqIH0CCSWU_4ckRkAoy2p73o="
@@ -63,11 +65,19 @@ import SectionContainer from "../components/SectionContainer.astro";
     </SectionContainer>
 
     <SectionContainer id="projects">
-      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <BriefCase class="size-4 md:size-7" />
-        Work Experience
+        Experience
       </h2>
       <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="work">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-4 md:size-7" />
+        Projects
+      </h2>
+      <Projects />
     </SectionContainer>
   </main>
 </Layout>
@@ -75,4 +85,4 @@ import SectionContainer from "../components/SectionContainer.astro";
 <style></style>
 
 <!-- 
-01:15:00 -->
+01:35:00 -->
